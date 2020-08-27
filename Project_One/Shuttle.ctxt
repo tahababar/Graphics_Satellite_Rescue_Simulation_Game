@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Shuttle
+comment0.text=\n\ The\ shuttle\ hovers\ on\ the\ left\ edge\ of\ the\ canvas.\ It\ can\ be\ moved\ up\ or\ down\ by\ pressing\n\ the\ 'K'\ or\ 'J'\ key\ accordingly.\ The\ shuttle\ has\ 5\ fuelcells,\ which\ can\ be\ launched\ one\ at\n\ a\ time\ using\ the\ space\ bar.\ After\ launching\ all\ 5\ fuelcells\ a\ refueling\ cannot\ occur.\n\ \n\ @author\ Computer\ Science\ Department\n\ @version\ September\ 2006\n
+comment1.params=theCanvas\ theSpaceStation
+comment1.target=Shuttle(Canvas,\ SpaceStation)
+comment1.text=\n\ Constructor\ create\ a\ Shuttle\ object\:\n\ Uses\ canvas\ when\ creating\ the\ shuttle\ object\n\ The\ shuttle\ object\ needs\ a\ color,\ an\ initial\ position,\n\ an\ initial\ direction\ of\ motion,\ and\ 5\ fuel\ cells\n\ \ \ \ \n\ @param\ canvas\ the\ canvas\ on\ which\ to\ render\ the\ shuttle\n
+comment2.params=theDirection
+comment2.target=void\ setDirection(java.lang.String)
+comment2.text=\n\ Change\ direction\ to\ "up"\ or\ "down"\ \ \n\ @param\ theDirection\:\ "up"\ or\ "down".\n
+comment3.params=
+comment3.target=void\ moveSmallDistance()
+comment3.text=\n\ Move\ the\ shuttle\ 10\ pixels\ up\ or\ down\ in\ the\ direction\ \n\ specified\ by\ the\ direction\ instance\ field\n
+comment4.params=
+comment4.target=FuelCell\ launchCell()
+comment4.text=\n\ If\ there\ are\ more\ cells,\ create\ a\ new\ fuelCell\ and\ launch\ it\n\ from\ the\ vertex\ of\ the\ shuttle.\ One\ is\ deducted\ from\ the\ number\ of\ available\n\ cells.\n\ \n\ NOTE\:\ Don't\ forget\ to\ modify\ the\ getNumberFuelCells()\ method\ so\ that\ the\n\ \ \ \ \ \ \ controller\ will\ know\ there\ is\ a\ fuelcell\ to\ launch.\n\ \ \ \ \ \ \ \n\ @return\ cell\ --\ a\ launched\ FuelCell\ object\ or\ null,\ if\ the\ shuttle\ is\ out\ of\ cells\n
+comment5.params=
+comment5.target=void\ dock()
+comment5.text=\n\ Send\ the\ shuttle\ out\ to\ the\ space\ station\ and\ back\:\n\ (1)\ move\ the\ shuttle\ toward\ the\ space\ station\ and\ dock\n\ (2)\ Wait\ three\ seconds\n\ (3)\ move\ the\ shuttle\ horizontally\n\ \ \ \ \ back\ to\ the\ left\ side\ of\ the\ window.\n\ \ \ \ \ \ \n\ Pattern\ the\ docking\ operation\ after\ the\ similar\ operation\n\ in\ the\ FuelCell\ class.\n
+comment6.params=
+comment6.target=int\ getNumberFuelCells()
+comment6.text=\n\ @return\ numberFuelCells\ --\ the\ current\ number\ of\ fuel\ cells\n
+numComments=7

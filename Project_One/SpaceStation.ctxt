@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=SpaceStation
+comment0.text=\n\ The\ space\ station\ moves\ diagonally\ from\ upper-left\ to\ lower\ right\ on\ the\n\ canvas.\ It\ is\ green\ on\ the\ first\ orbit\ (the\ first\ time\ it\ moves\ on\ the\ diagonal),\ \n\ yellow\ on\ the\ second\ orbit,\ and\ red\ thereafter,\ until\ a\ new\ refueling\ operation\n\ begins.\n\ \n\ @author\ Computer\ Science\ Department\n\ @version\ September\ 2006\n
+comment1.params=simCanvas
+comment1.target=SpaceStation(Canvas)
+comment1.text=\n\ Creates\ a\ space\ shuttle\ as\ a\ Diamond\ object\ at\ a\ random\ position\ at\ the\ top\ of\n\ the\ simulation\ window.\ Once\ the\ space\ station\ is\ initialized,\ it\ should\ begin\n\ to\ orbit.\n\ \n\ @param\ canvas\ --\ the\ canvas\ on\ which\ to\ render\ the\ space\ station\n
+comment2.params=
+comment2.target=void\ moveSmallDistance()
+comment2.text=\ \ \ \ \ \ \n\ Handle\ orbiting\ details\:\n\ (1)\ move\ the\ space\ station,\ if\ it\ is\ within\ canvas\ boundaries\n\ (2)\ begin\ another\ orbit\ at\ a\ lower\ starting\ point,\ if\ space\ station\ reaches\ the\ \n\ right\ side\ of\ the\ canvas.\ Do\ this\ by\ computing\ new\ initXPosition\ and\ initYPosition\n\ and\ then\ by\ moving\ there\n\ (2a)\ update\ orbitCount\n\ (2b)\ if\ space\ station\ completed\ 1\ orbit,\ change\ its\ color\ to\ "yellow"\n\ (2c)\ if\ space\ station\ completed\ 2\ orbits,\ change\ its\ color\ to\ "red"\n
+comment3.params=
+comment3.target=void\ reFuel()
+comment3.text=\n\ The\ fuel\ cell\ has\ docked,\ so\:\n\ (1)\ change\ color\ back\ to\ "green"\n\ (2)\ wait\ 3\ seconds\n
+comment4.params=newSpeed
+comment4.target=void\ setSpeed(char)
+comment4.text=\n\ Set\ the\ orbiting\ speed\ according\ to\ 'B',\ 'I',\ or\ 'A'.\n\ You\ can\ experiment\ with\ xDistance\ and\ yDistance\ for\ this.\n
+comment5.params=
+comment5.target=int\ getXPosition()
+comment5.text=\n\ @return\ xPosition\ --\ the\ current\ x-coordinate\ of\ the\ space\ station\n
+comment6.params=
+comment6.target=int\ getYPosition()
+comment6.text=\n\ @return\ yPosition\ --\ the\ current\ y-coordinate\ of\ the\ space\ station\n
+numComments=7

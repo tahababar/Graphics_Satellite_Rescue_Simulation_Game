@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=FuelCell
+comment0.text=\n\ The\ fuelcell\ travels\ toward\ the\ space\ station\ when\ launched.\n\ It\ travels\ horizontally\ on\ a\ line\ extending\ from\ the\ apex\ of\ the\ shuttle.\n\ \n\ @author\ Computer\ Science\ Department\n\ @version\ September\ 2006\n
+comment1.params=theCanvas\ theSpaceStation
+comment1.target=FuelCell(Canvas,\ SpaceStation)
+comment1.text=\n\ The\ constructor\ creates\ a\ fuel\ cell\ that\ can\ reference\ the\ space\ station\ and\n\ the\ shuttle.\ It\ needs\ to\ know\ about\ these\ objects\ so\ it\ can\ coordinate\ docking\n\ operations\ for\ itself\ and\ for\ the\ shuttle.\n\ \n\ @param\ theCanvas\ the\ canvas\ to\ use\ for\ all\ graphics\n\ @param\ theSpaceStation\ the\ spaceStation\ --\ created\ by\ the\ Controller\ in\ this\ application\n
+comment2.params=xPosition\ yPosition
+comment2.target=void\ launch(int,\ int)
+comment2.text=\n\ launch\ sets\ initial\ conditions\ for\ the\ launch.\n
+comment3.params=
+comment3.target=void\ moveSmallDistance()
+comment3.text=\n\ Repeated\ calls\ to\ moveSmallDistance\ will\ eventually\ get\ the\ fuel\ cell\ close\ to\ the\ space\ station\ or\n\ miss\ the\ space\ station,\ sending\ the\ fuel\ cell\ off\ the\ right\ side\ of\ the\ canvas.\n
+comment4.params=
+comment4.target=java.lang.String\ status()
+comment4.text=\n\ status()\ returns\ the\ status\ of\ the\ cell\n\ @return\ status\ "refueled",\ "missed",\ or\ "moving"\n
+numComments=5
